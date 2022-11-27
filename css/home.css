@@ -14,6 +14,7 @@
 
 .navbar .left{
     display: flex;
+    justify-content: center;
 }
 
 .left img{
@@ -21,7 +22,7 @@
 }
 
 .left input{
-    margin-inline: 11px;
+    margin-inline: 30px;
     width: 500px;
     height: 40px;
     border: none;
@@ -37,7 +38,7 @@
 }
 
 .right p{
-    margin-inline: 22px;
+    margin-right: 200px;
     font-size: 22px;
 }
 
@@ -54,27 +55,43 @@
     font-size: 22px;
 } */
 
+.container{
+    margin-bottom: 20px;
+}
+
 .container h2{
-    padding: 22px;
+    padding: 10px;
 }
 
 .container .card{
-    display: flex;
+    /* display: flex;
     justify-content: center;
-    justify-content: space-around;
+    justify-content: space-around; */
+
+    
+    margin: 0 auto 0;
+    display: inline-block;
+    width: 250px;
+    height: 350px;
+    perspective: 700px;
+    align-items: center;
+    padding: 20px;
 }
 
 .card img{
-    width: 17%;
-    margin-block: 30px;
+    margin: auto;
+    height: 350px;
+    width: 250px;
+    /* width: 100%; */
+    /* margin-block: 30px; */
     border-radius: 4px;
-    margin-top: 10px;
+    /* margin-top: 10px; */
 }
 
 .footer{
     background-color: rgb(50,50,56);
     padding: 25px;
-    margin-top: 44px;
+    margin-top: 10px;
 }
 
 .footer img{
@@ -94,5 +111,13 @@
 .icon i{
     margin-inline: 22px;
     font-size: 40px;
-    padding-top: 35px;
+    border: none;
+  background: none;
+      color: #8d8d8d;
+    padding-top: 15px;
+}
+
+.icon i:hover{
+    color: #ffffff  ;
+    font-size: 50px;
 }
