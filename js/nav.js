@@ -9,8 +9,10 @@ const createNav = () => {
               <input type="text" class="search-box" placeholder="Search for Now Showing Movies and Upcoming Movies">
               <button class="search-btn" onclick="window.location.href = 'search.html';">search</button>
           </div>
-          <a href="signup.html"><img src="img/user.png" alt=""></a>
-          <a href="cart.html"><img src="img/cart.png" alt=""></a>
+          <div class="location">
+          <i class="fa-solid fa-location-dot"></i>
+          <h3>Jhansi</h3>
+          </div>
       </div>
   </div>
   <ul class="links-container">

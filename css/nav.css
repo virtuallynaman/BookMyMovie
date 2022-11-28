@@ -62,6 +62,19 @@
     color: #a9a9a9;
   }
   
+  .location{
+    display: flex;
+    padding:0 50px 0 70px;
+  }
+
+.location i{
+  font-size: 22px;
+}
+  
+  .location h3{
+    padding-left: 10px;
+  }
+  
   .nav-items a {
     margin-left: 20px;
   }
