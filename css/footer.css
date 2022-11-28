@@ -86,3 +86,11 @@ footer{
     color: #fff;
     background: rgba(0, 0, 0, 0.2);
 }
+
+.icon{
+    font-size: 40px;
+}
+
+.icon a{
+    color: rgb(171, 171, 171);
+}

@@ -28,8 +28,8 @@
   display: none;
 }
 
-.movie-card:hover img {
-  transform: scale(1.1);
+.movie-image:hover img {
+  transform: scale(1.2);
 }
 
 .movie-card {
@@ -57,17 +57,6 @@
   width: 100%;
   height: 380px;
   object-fit: cover;
-}
-
-.discount-tag {
-  position: absolute;
-  background: #fff;
-  padding: 5px;
-  border-radius: 5px;
-  color: #ff7d7d;
-  right: 10px;
-  top: 10px;
-  text-transform: capitalize;
 }
 
 .card-btn {
