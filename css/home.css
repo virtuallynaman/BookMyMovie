@@ -1,159 +1,115 @@
-@import 'nav.css';
+@import "nav.css";
+@import "footer.css";
 
-.product{
-    position: relative;
-    overflow: hidden;
-    padding: 20px 0;
+.movie {
+  position: relative;
+  overflow: hidden;
+  padding: 0;
 }
 
-.product-category{
-    padding: 0 10vw;
-    margin:  auto;    
-width: 100%;
-    font-size: 30px;
-    font-weight: 500;
-    text-transform: capitalize;
+.release-timeline {
+  padding: 0 10vw;
+  width: 100%;
+  margin: 20px 0 10px;
+  font-size: 30px;
+  font-weight: 500;
+  text-transform: capitalize;
 }
 
-.product-container{
-    padding: 0 4vw 0 10vw;
-margin: auto;    
-width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    /* overflow-y: auto;
-    scroll-behavior: smooth; */
+.movie-container {
+  padding: 0 4vw 0 10vw;
+  margin: auto;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
 }
 
-.product-container::-webkit-scrollbar{
-    display: none;
+.movie-container::-webkit-scrollbar {
+  display: none;
 }
 
-.product-card:hover img{
-    transform: scale(1.1);
+.movie-card:hover img {
+  transform: scale(1.1);
 }
 
-.product-card{
-    flex: 0 0 auto;
-margin: 30px 70px 20px 0;    
-width: 100%;
-overflow: hidden;
-    
-    width: 250px;
-    height: 450px;
+.movie-card {
+  flex: 0 0 auto;
+  margin: 20px 70px 0px 0;
+  width: 100%;
+  overflow: hidden;
+
+  width: 250px;
+  height: 472px;
 }
 
-.product-card img{
-    transition: transform .5s ease;
-
+.movie-card img {
+  transition: transform 0.5s ease;
 }
 
-.product-image{
-    position: relative;
-    width: 100%;
-    height: 380px;
-    overflow: hidden;
+.movie-image {
+  position: relative;
+  width: 100%;
+  height: 380px;
+  overflow: hidden;
 }
 
-.product-thumb{
-    width: 100%;
-    height: 380px;
-    object-fit: cover;
+.movie-thumb {
+  width: 100%;
+  height: 380px;
+  object-fit: cover;
 }
 
-.discount-tag{
-    position: absolute;
-    background: #fff;
-    padding: 5px;
-    border-radius: 5px;
-    color: #ff7d7d;
-    right: 10px;
-    top: 10px;
-    text-transform: capitalize;
+.discount-tag {
+  position: absolute;
+  background: #fff;
+  padding: 5px;
+  border-radius: 5px;
+  color: #ff7d7d;
+  right: 10px;
+  top: 10px;
+  text-transform: capitalize;
 }
 
-.card-btn{
-    position: absolute;
-    bottom: 10px;
-    left: 50%;
-    transform: translateX(-50%);
-    padding: 10px;
-    width: 90%;
-    text-transform: capitalize;
-    border: none;
-    outline: none;
-    background: #fff;
-    border-radius: 5px;
-    transition: 0.5s;
-    cursor: pointer;
-    opacity: 0;
+.card-btn {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 10px;
+  width: 90%;
+  text-transform: capitalize;
+  border: none;
+  outline: none;
+  background: #fff;
+  border-radius: 5px;
+  transition: 0.5s;
+  cursor: pointer;
+  opacity: 0;
 }
 
-.product-card:hover .card-btn{
-    opacity: 1;
+.movie-card:hover .card-btn {
+  opacity: 1;
 }
 
-.card-btn:hover{
-    background: #efefef;
+.card-btn:hover {
+  background: #efefef;
 }
 
-.product-info{
-    width: 100%;
-    height: auto;
-    padding-top: 10px;
+.movie-info {
+  width: 100%;
+  height: auto;
+  padding-top: 10px;
 }
 
-.product-brand{
-    text-transform: capitalize;
+.movie-name {
+  text-transform: capitalize;
 }
 
-.product-short-des{
-    width: 100%;
-    height: 20px;
-    line-height: 20px;
-    overflow: hidden;
-    opacity: 0.5;
-    margin: 5px 0;
-}
-
-.price{
-    font-weight: 900;
-    font-size: 20px;
-}
-
-.actual-price{
-    margin-left: 20px;
-    opacity: 0.5;
-    text-decoration: line-through;
-}
-
-.pre-btn, .nxt-btn{
-    border: none;
-    width: 10vw;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, #fff 100%);
-    cursor: pointer;
-    z-index: 8;
-}
-
-.pre-btn{
-    left: 0;
-    transform: rotate(180deg);
-}
-
-.nxt-btn{
-    right: 0;
-}
-
-.pre-btn img, .nxt-btn img{
-    opacity: 0.2;
-}
-
-.pre-btn:hover img, .nxt-btn:hover img{
-    opacity: 1;
+.movie-tags {
+  width: 100%;
+  height: 20px;
+  line-height: 20px;
+  overflow: hidden;
+  opacity: 0.5;
+  margin: 5px 0;
 }
