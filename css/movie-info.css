@@ -1,5 +1,5 @@
 .movie-container {
-    background: url("/images/Bhediya-CoverBanner.jpg") no-repeat center;
+    background: url("https://namanxjha.github.io/Movie-Ticket-Booking-Project/images/Bhediya-CoverBanner.jpg") no-repeat center;
     background-size: cover;
     height: 500px;
     position: relative;
