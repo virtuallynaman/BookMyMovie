@@ -2,10 +2,30 @@
 @import "movie-info.css";
 @import "footer.css";
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "roboto", sans-serif;
+}
+
+.dark {
+  background-color: #242628;
+  color: #fff;
+}
+
+hr {
+  border-style: none;
+  border-top-style: dotted;
+  width: 8%;
+  border-color: grey;
+  border-width: 5px;
+  margin: 50px auto;
+}
+
 .home-movie {
   position: relative;
   overflow: hidden;
-  padding: 0;
 }
 
 .release-timeline {
@@ -38,7 +58,6 @@
   margin: 20px 70px 0px 0;
   width: 100%;
   overflow: hidden;
-
   width: 250px;
   height: 472px;
 }
@@ -52,6 +71,7 @@
   width: 100%;
   height: 380px;
   overflow: hidden;
+  border-radius: 10px;
 }
 
 .home-movie-thumb {
@@ -101,5 +121,6 @@
   line-height: 20px;
   overflow: hidden;
   opacity: 0.5;
+  text-transform: capitalize;
   margin: 5px 0;
 }

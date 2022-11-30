@@ -1,3 +1,8 @@
+function themeChange() {
+    var element = document.body;
+    element.classList.toggle("dark");
+    }
+    
 const createNav = () => {
     let nav = document.querySelector(".navbar");
 
@@ -9,6 +14,7 @@ const createNav = () => {
               <input type="text" class="search-box" placeholder="Search for Now Showing Movies and Upcoming Movies">
               <button class="search-btn" onclick="window.location.href = 'search.html';">search</button>
           </div>
+          <button id="themebtn" onclick="themeChange()"><i id="theme" class="fa-solid fa-circle-half-stroke"></i></button>
           <div class="location">
           <i class="fa-solid fa-location-dot"></i>
           <h3>Jhansi</h3>
