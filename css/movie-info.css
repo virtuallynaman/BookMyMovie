@@ -136,7 +136,7 @@
  left: 152px;
  width: 80%;
   /* position: absolute; */
-  font-size: 28px;
+  font-size: 30px;
 }
 
 .summary {
@@ -144,4 +144,31 @@
   margin: auto;
   font-size: 18px;
   padding: 0px 200px 30px 0px;
+}
+
+.castlist{
+  border-radius: 8px;
+  border: 0.5px solid rgb(54 59 61);
+  box-shadow: 0px 0px 10px rgb(0, 0, 0, 0.4);
+  background-color: #191B1C;
+  width: 60%;
+  padding: 20px;
+  margin: auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.cast-title{
+  font-size: 30px;
+  position: relative;
+  left: 150px;
+  padding: 40px 0 20px;
+}
+
+.cast_img{
+  border-radius: 16px;
+  height: auto;
+  width: 200px;
+  align-items: center;
 }
