@@ -14,10 +14,19 @@
   color: #fff;
 }
 
+hr{
+  border-style: none;
+  border-top-style: dotted;
+  width: 8%;
+  border-color: grey;
+  border-width: 5px;
+  margin: 50px auto;
+}
+
+
 .home-movie {
   position: relative;
   overflow: hidden;
-  padding-top: 10px;
 }
 
 .release-timeline {
@@ -64,6 +73,7 @@
   width: 100%;
   height: 380px;
   overflow: hidden;
+  border-radius: 10px;
 }
 
 .home-movie-thumb {
@@ -113,5 +123,6 @@
   line-height: 20px;
   overflow: hidden;
   opacity: 0.5;
+  text-transform: capitalize;
   margin: 5px 0;
 }

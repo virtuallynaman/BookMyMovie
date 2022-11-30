@@ -1,5 +1,5 @@
 .movie-container {
-  background: url("/images/Bhediya-CoverBanner.jpg") no-repeat center;
+  background: url("https://namanxjha.github.io/Movie-Ticket-Booking-Project/images/Bhediya-CoverBanner.jpg") no-repeat center;
   background-size: cover;
   height: 500px;
   position: relative;
@@ -35,6 +35,7 @@
   width: 100%;
   height: 380px;
   object-fit: cover;
+  border-radius: 10px;
 }
 
 .movie-desc {
@@ -44,12 +45,21 @@
   bottom: 10px;
 }
 
+.movie-title {
+  display: inline-block;
+  width: 100%;
+  margin-top: 100px;
+  font-size: 30px;
+  font-weight: 500;
+  text-transform: capitalize;
+}
+
 .movie-desc p {
   margin-top: 10px;
 }
 
 .options {
-  margin-top: 50px;
+  margin-top: 30px;
 }
 
 .booking {
@@ -92,15 +102,6 @@
   text-decoration: none;
 }
 
-.movie-title {
-  display: inline-block;
-  width: 100%;
-  margin: 20px 0;
-  font-size: 30px;
-  font-weight: 500;
-  text-transform: capitalize;
-}
-
 .movie-details {
   /* padding-left: 120px; */
   /* border: 1px solid; */
@@ -112,7 +113,7 @@
   justify-items: center;
   align-items: center;
   border: 0.5px solid rgb(54 59 61);
-  box-shadow: 0px 0px 10px rgb(0, 0, 0, 0.4);
+  box-shadow: 0px 0px 10px rgb(0, 0, 0, 0.5);
   background-color: #191B1C;
   /* position: relative; */
 }
@@ -131,44 +132,51 @@
 }
 
 .summary-title {
-  padding: 30px 0 20px 150px;
+  /* padding: 30px 0 20px 150px; */
+  margin: 30px auto 20px;
   /* position: relative;  */
- left: 152px;
- width: 80%;
+ width: 60%;
   /* position: absolute; */
   font-size: 30px;
 }
 
 .summary {
-  width: 80%;
+  width: 60%;
   margin: auto;
   font-size: 18px;
-  padding: 0px 200px 30px 0px;
+  /* padding-right: 200px; */
+}
+
+.cast{
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  border: 0.5px solid rgb(54 59 61);
+  box-shadow: 0px 0px 10px rgb(0, 0, 0, 0.5);
+  background-color: #191B1C;
+  width: 60%;
+  margin: auto;
+}
+
+.cast-title{
+  color: #BDB7AF;
+  font-size: 30px;
+  left: 150px;
+  padding: 15px 0 0;
+  width: auto;
+  margin: auto;
 }
 
 .castlist{
-  border-radius: 8px;
-  border: 0.5px solid rgb(54 59 61);
-  box-shadow: 0px 0px 10px rgb(0, 0, 0, 0.4);
-  background-color: #191B1C;
-  width: 60%;
-  padding: 20px;
-  margin: auto;
   display: flex;
   justify-content: space-around;
   align-items: center;
 }
 
-.cast-title{
-  font-size: 30px;
-  position: relative;
-  left: 150px;
-  padding: 40px 0 20px;
-}
-
 .cast_img{
+  margin: 20px;
   border-radius: 16px;
   height: auto;
-  width: 200px;
+  width: 180px;
   align-items: center;
 }
