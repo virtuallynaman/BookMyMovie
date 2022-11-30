@@ -103,7 +103,6 @@
 
 .movie-details {
   /* padding-left: 120px; */
-  margin-top: 30px;
   /* border: 1px solid; */
   display: flex;
   width: 60%;
@@ -111,15 +110,18 @@
   border-radius: 8px;
   /* background-color: #35353593; */
   justify-items: center;
-  align-items: center
+  align-items: center;
+  border: 0.5px solid rgb(54 59 61);
+  box-shadow: 0px 0px 10px rgb(0, 0, 0, 0.4);
+  background-color: #191B1C;
   /* position: relative; */
 }
 
 .desc {
   /* padding: 1vw 0vw 2vw 16vw; */
   width: 30%;
-  color: rgb(0, 0, 0);
-  font-size: 18px;;
+  font-size: 18px;
+  color: #BDB7AF;
   /* padding: 60px 0px 0 50px; */
 }
 
@@ -141,5 +143,5 @@
   width: 80%;
   margin: auto;
   font-size: 18px;
-  padding: 0px 200px 50px 0px;
+  padding: 0px 200px 30px 0px;
 }

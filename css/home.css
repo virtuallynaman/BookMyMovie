@@ -2,10 +2,22 @@
 @import "movie-info.css";
 @import "footer.css";
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "roboto", sans-serif;
+}
+
+.dark{
+  background-color: #242628;
+  color: #fff;
+}
+
 .home-movie {
   position: relative;
   overflow: hidden;
-  padding: 0;
+  padding-top: 10px;
 }
 
 .release-timeline {
