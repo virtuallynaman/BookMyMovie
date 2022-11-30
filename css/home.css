@@ -9,12 +9,12 @@
   font-family: "roboto", sans-serif;
 }
 
-.dark{
+.dark {
   background-color: #242628;
   color: #fff;
 }
 
-hr{
+hr {
   border-style: none;
   border-top-style: dotted;
   width: 8%;
@@ -22,7 +22,6 @@ hr{
   border-width: 5px;
   margin: 50px auto;
 }
-
 
 .home-movie {
   position: relative;
@@ -59,7 +58,6 @@ hr{
   margin: 20px 70px 0px 0;
   width: 100%;
   overflow: hidden;
-
   width: 250px;
   height: 472px;
 }
