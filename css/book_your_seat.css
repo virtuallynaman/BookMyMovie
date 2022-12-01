@@ -64,7 +64,7 @@ body {
 }
 
 .seat {
-  background-color: #444351;
+  background-color: #ffffff;
   height: 30px;
   width: 30px;
   margin: 3px;
@@ -95,7 +95,7 @@ body {
 }
 
 .occupied {
-  background-color: #ffffff;
+  background-color: #444351;
 }
 
 .row {
