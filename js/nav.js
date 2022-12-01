@@ -1,6 +1,7 @@
 function themeChange() {
     var element = document.body;
-    element.classList.toggle("dark");
+    element.classList.toggle("dark-mode");
+    set
     }
     
 const createNav = () => {
