@@ -7,14 +7,24 @@
   padding: 0;
   /* transition: all 500ms ease; */
   box-sizing: border-box;
-  transition: all .2s linear 0s;
   font-family: "roboto", sans-serif;
+}
+/* 
+:root{
+  --background-color: #fff;
+  --text-color: #555;
+  --title-color: #000;
+} */
+
+body{
+  /* background: var(--background-color);
+  color: var(--text-color); */
+  transition: ease 500ms;
 }
 
 .dark-mode {
   background-color: #242628;
   color: #fff;
-  /* transition: ease 500ms; */
 }
 
 hr {
