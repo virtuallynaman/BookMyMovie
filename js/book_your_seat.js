@@ -3,7 +3,7 @@ const seats = document.querySelectorAll(".row .seat:not(.occupied)");
 const count = document.getElementById("count");
 const total = document.getElementById("total");
 const movieSelect = document.getElementById("movie");
-let ticketPrice = +movieSelect.value;
+// let ticketPrice = +movieSelect.value;
 
 populateUI();
 
@@ -16,14 +16,14 @@ function updatePrice() {
     localStorage.setItem("selectedSeats", JSON.stringify(seatsIndex));
 
     count.innerText = selectedSeatsCount;
-    total.innerText = ticketPrice * selectedSeatsCount;
+    total.innerText = 250 * selectedSeatsCount;
 }
 
-// Save selected movie index and price
-function setMovieData(movieIndex, moviePrice) {
-    localStorage.setItem("selectedMovieIndex", movieIndex);
-    localStorage.setItem("selectedMoviePrice", moviePrice)
-}
+// // Save selected movie index and price
+// function setMovieData(movieIndex, moviePrice) {
+//     localStorage.setItem("selectedMovieIndex", movieIndex);
+//     localStorage.setItem("selectedMoviePrice", moviePrice)
+// }
 
 //seat click event listener
 container.addEventListener("click", e => {
@@ -33,12 +33,12 @@ container.addEventListener("click", e => {
     }
 });
 
-//movie selection event listener
-movieSelect.addEventListener("change", e => {
-    ticketPrice = e.target.value;
-    setMovieData(e.target.selectedIndex, e.target.value);
-    updatePrice();
-})
+// //movie selection event listener
+// movieSelect.addEventListener("change", e => {
+//     ticketPrice = e.target.value;
+//     setMovieData(e.target.selectedIndex, e.target.value);
+//     updatePrice();
+// })
 
 // Get data from localStorage and populate UI
 function populateUI() {
@@ -51,9 +51,9 @@ function populateUI() {
         });
     }
 
-    const selectedMovieIndex = localStorage.getItem("selectedMovieIndex");
-    if (selectedMovieIndex !== null) {
-        movieSelect.selectedIndex = selectedMovieIndex;
-    }
+    // const selectedMovieIndex = localStorage.getItem("selectedMovieIndex");
+    // if (selectedMovieIndex !== null) {
+    //     movieSelect.selectedIndex = selectedMovieIndex;
+    // }
 }
 updatePrice();

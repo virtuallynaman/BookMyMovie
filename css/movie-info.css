@@ -66,8 +66,8 @@
   margin-top: 20px;
 }
 
-.wishlist {
-  -webkit-border-radius: 20;
+.wishlist {  
+  /* -webkit-border-radius: 20;
   -moz-border-radius: 20;
   border: none;
   border-radius: 20px;
@@ -76,7 +76,11 @@
   font-size: 20px;
   background: #f5f5f5;
   padding: 10px 20px 10px 20px;
-  text-decoration: none;
+  text-decoration: none; */
+  font-size: 40px;
+  color: #cc2f2f;
+  background: transparent;
+  margin-top: 20px;
 }
 
 .wishlist:hover {
@@ -100,6 +104,10 @@
 .booking:hover {
   background: #ff5c5c;
   text-decoration: none;
+}
+
+#seaticon{
+  font-size: 22px;
 }
 
 .movie-details {
