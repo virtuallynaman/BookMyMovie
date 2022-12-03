@@ -9,7 +9,6 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 100vh;
   font-family: sans-serif;
   margin: 0;
 }
@@ -110,4 +109,29 @@ p span{
 
 p.summary{
     margin: 5px 0;
+}
+
+.payment {
+  -webkit-border-radius: 28;
+  -moz-border-radius: 28;
+  cursor: pointer;
+  border-radius: 28px;
+  border: none;
+  margin: 40px;
+  font-family: Arial;
+  color: #ffffff;
+  font-size: 20px;
+  background: #e31c1c;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+}
+
+.payment:hover {
+  background: #d13030;
+  background-image: -webkit-linear-gradient(top, #d13030);
+  background-image: -moz-linear-gradient(top, #d13030);
+  background-image: -ms-linear-gradient(top, #d13030);
+  background-image: -o-linear-gradient(top, #d13030);
+  background-image: linear-gradient(to bottom, #d13030);
+  text-decoration: none;
 }
