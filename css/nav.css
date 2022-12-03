@@ -58,7 +58,6 @@
 }
 
 #theme {
-  margin-left: 60px;
   font-size: 28px;
 }
 
@@ -70,6 +69,7 @@
   color: inherit;
   border: none;
   background: inherit;
+  margin-left: 60px;
 }
 
 .location {
