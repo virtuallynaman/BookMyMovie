@@ -23,10 +23,11 @@ const createNav = () => {
       </div>
   </div>
   <ul class="links-container">
-      <li class="link-item"><a href="index.html" class="link">Upcoming Movies</a></li>
-      <li class="link-item"><a href="#" class="link">Recently Released</a></li>
+      <li class="link-item"><a href="index.html#upcomingmovies" class="link">Upcoming Movies</a></li>
+      <li class="link-item"><a href="index.html#recentlyreleased" class="link">Recently Released</a></li>
       <li class="link-item"><a href="#" class="link">Categories</a></li>
       <li class="link-item"><a href="#" class="link">Languages</a></li>
+      <li class="link-item"><a href="#" class="link">My Wishlist</a></li>
   </ul>
     `;
 }
