@@ -2,7 +2,7 @@ const container = document.querySelector(".container");
 const seats = document.querySelectorAll(".row .seat:not(.occupied)");
 const count = document.getElementById("count");
 const total = document.getElementById("total");
-const movieSelect = document.getElementById("movie");
+// const movieSelect = document.getElementById("movie");
 // let ticketPrice = +movieSelect.value;
 
 populateUI();
@@ -31,6 +31,7 @@ container.addEventListener("click", e => {
         e.target.classList.toggle("selected");
         updatePrice();
     }
+    console.log(e.target);
 });
 
 // //movie selection event listener
