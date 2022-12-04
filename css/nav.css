@@ -57,19 +57,22 @@
   color: #a9a9a9;
 }
 
-#theme {
-  font-size: 28px;
-}
-
-#theme:hover {
+.themeBtn {
+  background-color: #4864ff;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   cursor: pointer;
+  margin-left: 50px;
+  height: 40px;
+  width: 110px;
+  border-radius: 20px;
 }
 
-#themebtn {
-  color: inherit;
-  border: none;
-  background: inherit;
-  margin-left: 60px;
+.themeBtn img {
+  width: 25px;
+  margin-left: 10px;
 }
 
 .location {

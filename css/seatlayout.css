@@ -13,11 +13,11 @@ body {
   margin: 0;
 }
 
-.movie-container {
+.theatre-container {
   margin: 20px 0;
 }
 
-.movie-container select {
+.theatre-container select {
   background-color: white;
   margin-left: 15px;
   padding: 5px 15px;
