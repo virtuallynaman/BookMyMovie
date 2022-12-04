@@ -40,12 +40,19 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 0 10px;
 }
 
 .showcase li small{
-    margin-left: 3px;
-    font-size: 13px;
+    font-size: 16px;
+    margin-right: 20px;
+}
+
+#showcaseSeat{
+  color: #fff;
+}
+
+#showcaseSelected{
+  color: #6feaf6;
 }
 
 .container{
@@ -57,26 +64,26 @@ body {
     height: 120px;
     width: 350px;
     background-color: #ffffff;
-    margin: 15px 0;
+    margin: 30px auto 80px;
     transform: rotateX(-45deg);
     box-shadow: 0 3px 15px rgba(225, 225, 225, 0.7);
 }
 
 .seat {
-  background-color: #ffffff;
-  height: 30px;
-  width: 30px;
-  margin: 3px;
-  border-top-left-radius: 13px;
-  border-top-right-radius: 13px;
+  color: #fff;
 }
 
-.seat:nth-of-type(2) {
-  margin-right: 20px;
+.fa-solid{
+  margin: 10px;
+  font-size: 26px;
 }
 
-.seat:nth-last-of-type(2) {
-  margin-left: 20px;
+.seat:nth-of-type(6) {
+  margin-right: 30px;
+}
+
+.seat:nth-last-of-type(6) {
+  margin-left: 30px;
 }
 
 .seat:not(.occupied):hover{
@@ -84,17 +91,12 @@ body {
     transform: scale(1.1);
 }
 
-.showcase .seat:not(.occupied):hover{
-    cursor:default;
-    transform: scale(1);
-}
-
 .selected {
-  background-color: #6feaf6;
+  color: #6feaf6;
 }
 
 .occupied {
-  background-color: #444351;
+  color: #444351;
 }
 
 .row {
@@ -108,7 +110,8 @@ p span{
 }
 
 p.summary{
-    margin: 5px 0;
+    margin: 5px auto;
+    width: fit-content;
 }
 
 .payment {
