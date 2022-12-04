@@ -1,13 +1,9 @@
 @charset "UTF-8";
 
-.mbsc-ios,
-.mbsc-datepicker,
-.mbsc-calendar, 
-.mbsc-ios.mbsc-datepicker ,
-.mbsc-calendar-cell, 
-.mbsc-ios.mbsc-datepicker, 
-.mbsc-calendar-slide {
+.mbsc-ios.mbsc-datepicker-inline {
     background: var(--background-color);
+    border-color: #ccc;
+    color: var(text-color);
 }
 
 .mbsc-grid,
@@ -7615,11 +7611,6 @@
     border: 0
 }
 
-.mbsc-ios.mbsc-calendar {
-    background: #fff;
-    color: #000
-}
-
 .mbsc-ios.mbsc-calendar-header,
 .mbsc-ios.mbsc-calendar-wrapper {
     border-color: #ccc
@@ -7627,12 +7618,6 @@
 
 .mbsc-ios.mbsc-calendar-button.mbsc-button {
     color: #007aff
-}
-
-.mbsc-ios.mbsc-calendar-cell {
-    background: #fff;
-    border-color: #ccc;
-    color: #000
 }
 
 .mbsc-ios.mbsc-calendar-day:after {
@@ -10948,21 +10933,9 @@
     border-color: #ccc
 }
 
-.mbsc-ios.mbsc-datepicker .mbsc-calendar,
-.mbsc-ios.mbsc-datepicker .mbsc-calendar-cell,
-.mbsc-ios.mbsc-datepicker .mbsc-calendar-slide {
-    background: #fff
-}
-
 .mbsc-ios.mbsc-datepicker-bottom.mbsc-datepicker-control-date,
 .mbsc-ios.mbsc-datepicker-top.mbsc-datepicker-control-date {
     background: #d1d5db
-}
-
-.mbsc-ios.mbsc-datepicker-inline {
-    background: #f00;
-    border-color: #ccc;
-    color: #000
 }
 
 .mbsc-ios.mbsc-range-control-value.active {
