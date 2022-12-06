@@ -101,6 +101,10 @@ body {
   justify-content: center;
 }
 
+.rownum{
+  margin-right: 10px;
+}
+
 p span{
     color: rgb(0, 255, 0);
 }
