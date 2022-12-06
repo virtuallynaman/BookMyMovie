@@ -11,10 +11,10 @@
 }
 
 :root{
-  --background-color: #fff;
+  --background-color: rgb(226, 242, 254);
   --text-color: #555;
   --title-color: #000;
-  --movie-info-div: #
+  --movie-info-div: #fff;
 }
 
 body{
@@ -27,7 +27,7 @@ body{
   --background-color: #242628;
   --title-color: #999;
   --text-color: #fff;
-  --
+  --movie-info-div: #191B1C;
 }
 
 hr {
@@ -50,6 +50,7 @@ hr {
   margin: 20px 0 10px;
   font-size: 30px;
   font-weight: 500;
+  color: var(--title-color);
   text-transform: capitalize;
 }
 
@@ -128,6 +129,7 @@ hr {
 }
 
 .home-movie-name {
+  color: var(--title-color);
   text-transform: capitalize;
 }
 

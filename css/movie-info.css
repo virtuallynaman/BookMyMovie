@@ -21,6 +21,7 @@
   display: flex;
   align-items: center;
   flex-direction: row;
+  box-shadow: 800px 0px 80px 0px rgba(0, 0, 0, 0.707) inset;
 }
 
 .movie-card {
@@ -48,7 +49,7 @@
 .movie-title {
   display: inline-block;
   width: 100%;
-  margin-top: 100px;
+  margin-top: 70px;
   font-size: 30px;
   font-weight: 500;
   text-transform: capitalize;
@@ -59,7 +60,8 @@
 }
 
 .options {
-  margin-top: 30px;
+  margin: 60px 0 10px;
+  display: flex;
 }
 
 .booking {
@@ -71,14 +73,6 @@
 }
 
 .wishlist {  
-  /* -webkit-border-radius: 20;
-  -moz-border-radius: 20;
-  border-radius: 20px;
-  font-family: Arial;
-  color: #000000;
-  font-size: 20px;
-  padding: 10px 20px 10px 20px;
-  text-decoration: none; */
   border: none;
   font-size: 40px;
   color: #cc2f2f;
@@ -86,9 +80,45 @@
   margin-top: 20px;
 }
 
-.wishlist:hover {
-  color: #d4d4d4;
-  text-decoration: none;
+.wishlist {
+  position: relative;
+  display: inline-block;
+}
+
+#wishText{
+  visibility: hidden;
+  width: max-content;
+  background-color: rgba(0, 0, 0, 0.732);
+  color: #fff;
+  font-weight: normal;
+  font-size: 16px;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 10px;
+  position: absolute;
+  z-index: 1;
+  bottom: 120%;
+  left: 50%;
+  margin-left: -62px;
+}
+
+.wishlist #wishText::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: black transparent transparent transparent;
+}
+
+.wishlist:hover #wishText {
+  visibility: visible;
+}
+
+#checkbtn{
+  color: rgb(0, 255, 0);
 }
 
 .booking {
@@ -101,6 +131,7 @@
   font-size: 20px;
   background: #cc2f2f;
   padding: 10px 20px 10px 20px;
+  margin-left: 20px;
   text-decoration: none;
 }
 
@@ -109,7 +140,7 @@
   text-decoration: none;
 }
 
-#seaticon{
+#ticketicon{
   font-size: 22px;
 }
 
@@ -122,13 +153,13 @@
   align-items: center;
   border: 0.5px solid rgb(54 59 61);
   box-shadow: 0px 0px 10px rgb(0, 0, 0, 0.5);
-  background-color: #191B1C;
+  background-color: var(--movie-info-div);
 }
 
 .desc {
   width: 30%;
   font-size: 18px;
-  color: #BDB7AF;
+  color: var(--text-color);
 }
 
 .movie-details iframe {
@@ -138,8 +169,9 @@
 
 .summary-title {
   margin: 30px auto 20px;
- width: 60%;
+  width: 60%;
   font-size: 30px;
+  color: var(--title-color);
 }
 
 .summary {
@@ -154,18 +186,27 @@
   border-radius: 10px;
   border: 0.5px solid rgb(54 59 61);
   box-shadow: 0px 0px 10px rgb(0, 0, 0, 0.5);
-  background-color: #191B1C;
+  background-color: var(--movie-info-div);
   width: 60%;
   margin: auto;
 }
 
 .cast-title{
-  color: #BDB7AF;
+  color:  var(--text-color);
   font-size: 30px;
   left: 150px;
   padding: 15px 0 0;
   width: auto;
   margin: auto;
+}
+
+#casthr{
+  background-color: rgb(54 59 61);
+  border-style:solid;
+  border-top-style: none;
+  width: 100%;
+  border-width: 1px;
+  margin: 20px auto 10px;
 }
 
 .castlist{

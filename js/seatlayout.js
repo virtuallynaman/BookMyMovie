@@ -2,6 +2,8 @@ const container = document.querySelector(".container");
 const seats = document.querySelectorAll(" .seat:not(.occupied)");
 const count = document.getElementById("count");
 const total = document.getElementById("total");
+const totalPrice = document.getElementById("totalPrice");
+const paymentbtn = document.getElementById("paymentbtn");
 
 populateUI();
 
@@ -17,6 +19,8 @@ function updatePrice() {
 
     count.innerText = selectedSeatsCount;
     total.innerText = 250 * selectedSeatsCount;
+
+    updatePaymentButton(selectedSeatsCount);
 }
 
 //seat click event listener
@@ -40,3 +44,13 @@ function populateUI() {
 }
 
 updatePrice();
+
+function updatePaymentButton(numOfSelectedSeats) {
+    if (numOfSelectedSeats > 0) {
+        paymentbtn.style.visibility = "visible";
+        totalPrice.innerText = 250 * numOfSelectedSeats;
+    }
+    else{
+        paymentbtn.style.visibility = "hidden";
+    }
+}
