@@ -15,6 +15,7 @@
 .title{
   margin: 10px 20px;
   width: max-content; 
+  color: var(--title-color);
 }
 
 .lil-info{
@@ -38,6 +39,7 @@ input{
 .schedule-container{
   display: flex;
   flex-direction: column;
+  justify-content: center;
   width: 100%;
 }
 
@@ -68,6 +70,7 @@ input{
     -webkit-border-radius: 28;
     -moz-border-radius: 28;
     border-radius: 28px;
+    cursor: pointer;
     font-family: Arial;
     color: #ffffff;
     font-size: 20px;
@@ -75,7 +78,7 @@ input{
     padding: 10px 20px 10px 20px;
     text-decoration: none;
     border: none;
-    margin: auto;
+    margin: 30px auto;
   }
   
   .seatBookPage:hover {

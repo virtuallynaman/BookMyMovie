@@ -1,7 +1,7 @@
 @charset "UTF-8";
 
 .mbsc-ios.mbsc-datepicker-inline {
-    background: var(--background-color);
+    background: transparent;
     border-color: #ccc;
     color: var(text-color);
 }

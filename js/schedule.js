@@ -14,3 +14,4 @@ mobiscroll.datepicker('#demo-1-week', {
     min: min,
     max: max,
 });
+

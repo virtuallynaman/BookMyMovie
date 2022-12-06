@@ -27,18 +27,20 @@ const createNav = () => {
       <li class="link-item"><a href="#" class="link">My Wishlist</a></li>
       </ul>
       `;
-    }
-    
+}
+
 createNav();
 
 
 let themeBtn = document.getElementById("theme");
 let themeIcon = document.getElementById("themeIcon");
 let themeText = document.getElementById("themeText");
+let wishBtn = document.getElementById("wishBtn");
+let wishText = document.getElementById("wishText");
 
 themeBtn.onclick = function () {
     document.body.classList.toggle("dark-mode");
-    
+
     if (document.body.classList.contains("dark-mode")) {
         themeIcon.src = "images/sun.png";
         themeText.innerHTML = "Light";
@@ -47,3 +49,18 @@ themeBtn.onclick = function () {
         themeText.innerHTML = "Dark"
     }
 };
+
+wishBtn.onclick = function () {
+
+    if (wishBtn.classList.contains("fa-regular")) {
+        wishBtn.classList.remove("fa-regular");
+        wishBtn.classList.add("fa-solid");
+        wishText.innerHTML = "<i id='checkbtn' class='fa-solid fa-check'></i> Added to wishlist";
+        wishText.style = "margin-left: -81px"
+    } else {
+        wishBtn.classList.remove("fa-solid");
+        wishBtn.classList.add("fa-regular");
+        wishText.innerHTML = "Add to wishlist";
+        wishText.style = "margin-left: -62px"
+    }
+}

@@ -50,6 +50,7 @@ hr {
   margin: 20px 0 10px;
   font-size: 30px;
   font-weight: 500;
+  color: var(--title-color);
   text-transform: capitalize;
 }
 
@@ -128,6 +129,7 @@ hr {
 }
 
 .home-movie-name {
+  color: var(--title-color);
   text-transform: capitalize;
 }
 
