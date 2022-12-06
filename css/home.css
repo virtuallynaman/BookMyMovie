@@ -13,7 +13,7 @@
 :root{
   --background-color: rgb(226, 242, 254);
   --text-color: #555;
-  --title-color: #000;
+  --title-color: rgba(32, 30, 30, 0.897);
   --movie-info-div: #fff;
 }
 
@@ -25,8 +25,8 @@ body{
 
 .dark-mode {
   --background-color: #242628;
-  --title-color: #999;
-  --text-color: #fff;
+  --title-color: rgba(255, 255, 255, 0.79);
+  --text-color: rgb(212, 205, 205);
   --movie-info-div: #191B1C;
 }
 
@@ -139,6 +139,7 @@ hr {
   line-height: 20px;
   overflow: hidden;
   opacity: 0.5;
+  color: var(--text-color);
   text-transform: capitalize;
   margin: 5px 0;
 }
