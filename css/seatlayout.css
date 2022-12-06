@@ -9,8 +9,33 @@ body {
   margin: 0;
 }
 
+#seatpagelogo{
+  height: 62px;
+  position: absolute;
+  top: 4%;
+  left: 4%;
+  margin-left: 15px;
+}
+
+.backbtn{
+  position: absolute;
+  top: 12%;
+  left: 5.5%;
+  display: flex;
+  align-items: center;
+}
+
+.backicon{
+  font-size: 30px;
+}
+
+.backbtn p{
+  font-size: 20px;
+  display: block;
+}
+
 .theatre-container {
-  margin: 20px 0;
+  margin: 50px 0 20px;
 }
 
 .theatre-container select {
