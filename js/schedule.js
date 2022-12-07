@@ -1,5 +1,8 @@
-var min = '2022-12-03T00:00';
-var max = '2023-06-03T00:00';
+const d = new Date();
+const date = d.toISOString();
+
+var min = 'date';
+var max = '2022-12-10';
 
 mobiscroll.setOptions({
     theme: 'ios',
@@ -14,4 +17,3 @@ mobiscroll.datepicker('#demo-1-week', {
     min: min,
     max: max,
 });
-

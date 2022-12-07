@@ -5,7 +5,6 @@ window.onload = function () {
     }
 }
 
-
 let themeBtn = document.getElementById("theme");
 let themeIcon = document.getElementById("themeIcon");
 let themeText = document.getElementById("themeText");

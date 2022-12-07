@@ -13,7 +13,7 @@
   </head>
   <body>
     <img id="seatpagelogo" src="images/logo.png" alt="logo" onclick="window.location.href = 'index.html'">
-    <div class="backbtn" onclick= "window.location.href='schedule.html'">
+    <div class="backbtn" onclick= "history.back()">
       <span class="backicon"><i class="fa-solid fa-circle-chevron-left"></i></span> 
       <p>Go Back</p>
     </div>
@@ -133,9 +133,9 @@
         <i class="fa-solid fa-couch seat"></i>
         <i class="fa-solid fa-couch seat"></i>
         <i class="fa-solid fa-couch seat"></i>
-        <i class="fa-solid fa-couch seat"></i>
-        <i class="fa-solid fa-couch seat"></i>
-        <i class="fa-solid fa-couch seat"></i>
+        <i class="fa-solid fa-couch seat occupied"></i>
+        <i class="fa-solid fa-couch seat occupied"></i>
+        <i class="fa-solid fa-couch seat occupied"></i>
         <i class="fa-solid fa-couch seat occupied"></i>
         <i class="fa-solid fa-couch seat occupied"></i>
         <i class="fa-solid fa-couch seat occupied"></i>
@@ -207,7 +207,7 @@
     </div>
 
     <p class="summary" id="paymentSummary">
-      You have selected <span id="count">0</span> seats for a price of
+      You have selected <span id="count">0</span> <span id="seatText">seats</span> for a price of
       <span id="currency">₹</span><span id="total">0</span>
     </p>
 
