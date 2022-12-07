@@ -5,6 +5,8 @@ const total = document.getElementById("total");
 const totalPrice = document.getElementById("totalPrice");
 const paymentbtn = document.getElementById("paymentbtn");
 const paymentSummary = document.getElementById("paymentSummary");
+const seatText = document.getElementById("seatText");
+const ticketPrice = 200;
 
 populateUI();
 
@@ -25,7 +27,7 @@ function updatePrice() {
     localStorage.setItem("selectedSeats", JSON.stringify(seatsIndex));
 
     count.innerText = selectedSeatsCount;
-    total.innerText = 250 * selectedSeatsCount;
+    total.innerText = ticketPrice * selectedSeatsCount;
 
     updatePaymentButton(selectedSeatsCount);
 }
@@ -45,10 +47,16 @@ function populateUI() {
 updatePrice();
 
 function updatePaymentButton(numOfSelectedSeats) {
-    if (numOfSelectedSeats > 0) {
+    const total = ticketPrice * numOfSelectedSeats;
+    if (numOfSelectedSeats > 0 ) {
         paymentbtn.style.visibility = "visible";
-        totalPrice.innerText = 250 * numOfSelectedSeats;
+        totalPrice.innerText = total;
         paymentSummary.style.visibility = "visible";
+        if (numOfSelectedSeats === 1) {
+            seatText.innerText = "seat";
+        } else {
+            seatText.innerText = "seats";
+        }
     }
     else{
         paymentbtn.style.visibility = "hidden";
