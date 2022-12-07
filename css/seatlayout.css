@@ -15,6 +15,7 @@ body {
   top: 4%;
   left: 4%;
   margin-left: 15px;
+  cursor: pointer;
 }
 
 .backbtn{
@@ -23,6 +24,7 @@ body {
   left: 5.5%;
   display: flex;
   align-items: center;
+  cursor: pointer;
 }
 
 .backicon{
@@ -35,7 +37,7 @@ body {
 }
 
 .theatre-container {
-  margin: 50px 0 20px;
+  margin: 80px 0 20px;
 }
 
 .theatre-container select {

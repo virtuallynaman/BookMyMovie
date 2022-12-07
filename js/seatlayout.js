@@ -4,8 +4,17 @@ const count = document.getElementById("count");
 const total = document.getElementById("total");
 const totalPrice = document.getElementById("totalPrice");
 const paymentbtn = document.getElementById("paymentbtn");
+const paymentSummary = document.getElementById("paymentSummary");
 
 populateUI();
+
+//seat click event listener
+container.addEventListener("click", e => {
+    if (e.target.classList.contains("seat") && !e.target.classList.contains("occupied")) {
+        e.target.classList.toggle("selected");
+        updatePrice();
+    }
+});
 
 //update count and total with price
 function updatePrice() {
@@ -20,14 +29,6 @@ function updatePrice() {
 
     updatePaymentButton(selectedSeatsCount);
 }
-
-//seat click event listener
-container.addEventListener("click", e => {
-    if (e.target.classList.contains("seat") && !e.target.classList.contains("occupied")) {
-        e.target.classList.toggle("selected");
-        updatePrice();
-    }
-});
 
 // Get data from localStorage and populate UI
 function populateUI() {
@@ -47,8 +48,10 @@ function updatePaymentButton(numOfSelectedSeats) {
     if (numOfSelectedSeats > 0) {
         paymentbtn.style.visibility = "visible";
         totalPrice.innerText = 250 * numOfSelectedSeats;
+        paymentSummary.style.visibility = "visible";
     }
     else{
         paymentbtn.style.visibility = "hidden";
+        paymentSummary.style.visibility = "hidden";
     }
 }
