@@ -25,7 +25,7 @@ const createNav = () => {
             <li class="link-item"><a href="#" class="link">Categories</a></li>
             <li class="link-item"><a href="#" class="link">Languages</a></li>
             <div class="wishdropdown">
-                <span class="dropdownbtn link" onclick="wishlistData()">My Wishlist <i class="fa-solid fa-caret-down"></i></span>
+                <span class="dropdownbtn link">My Wishlist <i class="fa-solid fa-caret-down"></i></span>
                 <div class="wishlistcontent">
                     <div id="movieposter"></div>
                     <p id="movietitle">You have not wishlisted any movie yet</p>

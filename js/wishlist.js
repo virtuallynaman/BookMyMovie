@@ -24,8 +24,9 @@ function wishlistData() {
 }
 
 wishlistData();
+wishlist();
 
-wishBtn.onclick = function() {
+function wishlist() {
     if (wishBtn.classList.contains("fa-regular")) {
         wishBtn.classList.remove("fa-regular");
         wishBtn.classList.add("fa-solid");
@@ -35,8 +36,8 @@ wishBtn.onclick = function() {
         localStorage.setItem("wishlistedMoviePoster", movieBanner.innerHTML);
         wishlistData();
     } else {
-        wishBtn.classList.remove("fa-solid");
         wishBtn.classList.add("fa-regular");
+        wishBtn.classList.remove("fa-solid");
         wishText.innerHTML = "Add to wishlist";
         wishText.style = "margin-left: -62px";
         localStorage.setItem("wishlistedMovie", "You have not wishlisted any movie yet");
