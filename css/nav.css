@@ -120,22 +120,53 @@
   opacity: 1;
 }
 
-.wishdropdown{
+.wishlistdropdown{
   position: relative;
   display: inline-block;
 }
 
-.wishlistcontent{
+.wishlistdropdowncontent{
   position: absolute;
-  visibility: hidden;
+  top: 30px;
+  left: -120px;
+  visibility: visible;
   display: flex;
+  flex-direction: column;
   background: var(--movie-info-div);
+  border: 0.5px solid #fff;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
-  padding: 20px;
+  z-index: 3;
+  padding: 0 20px;
   width: 350px;
   height: 350px;
   align-items: center;
+  border-radius: 8px;
+  /* overflow: scroll; */
+}
+
+.wishlistdropdown:hover .wishlistdropdowncontent{
+  visibility: visible;
+}
+
+.wishlistdropdowncontent::after{
+  content: "";
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 10px;
+  border-style: solid;
+  border-color:transparent transparent black transparent;
+}
+
+.wishlistcontent{
+  display: flex;
+  margin-top: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px dashed white;
+  align-items: center;
+  justify-content: center;
+  width: 320px;
 }
 
 #movieposter img{
@@ -146,8 +177,5 @@
   font-size: 20px;
   color: var(--text-color);
   padding-left: 30px;
-}
-
-.wishdropdown:hover .wishlistcontent{
-  visibility: visible;
+  height: fit-content;
 }

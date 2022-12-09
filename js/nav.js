@@ -24,12 +24,14 @@ const createNav = () => {
             <li class="link-item"><a href="index.html#recentlyreleased" class="link">Recently Released</a></li>
             <li class="link-item"><a href="#" class="link">Categories</a></li>
             <li class="link-item"><a href="#" class="link">Languages</a></li>
-            <div class="wishdropdown">
-                <span class="dropdownbtn link">My Wishlist <i class="fa-solid fa-caret-down"></i></span>
-                <div class="wishlistcontent">
-                    <div id="movieposter"></div>
-                    <p id="movietitle">You have not wishlisted any movie yet</p>
-                </div>    
+            <div class="wishlistdropdown">
+                <span class="link">My Wishlist <i class="fa-solid fa-caret-down"></i></span>
+                <div class="wishlistdropdowncontent">
+                    <div class="wishlistcontent">
+                        <div id="movieposter"></div>
+                        <p id="movietitle">You have not wishlisted any movie yet</p>
+                    </div>  
+                </div>
             </div>
         </ul>
       `;
