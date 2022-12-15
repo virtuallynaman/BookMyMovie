@@ -129,7 +129,7 @@
   position: absolute;
   top: 30px;
   left: -120px;
-  visibility: visible;
+  visibility: hidden;
   display: flex;
   flex-direction: column;
   background: var(--movie-info-div);
